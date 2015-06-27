@@ -1,17 +1,26 @@
 body {
 	font-family: Arial, sans-serif;
 	font-size: 1em;
-	width: 100%;
+	margin: 0;
 }
 h1 {
 	font-size: 1em;
 	text-align: left;
 }
+header,div,section,footer {
+	width: 60%;
+	clear: right;
+}
 aside {
 	float: right;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 1em;
+	width: 20%;
+	margin-top: 0;
+	height: 54.6em;
 }
 section {
-	background: url() no-repeat cover;
+	background: url(img/) no-repeat cover;
 }
 img {
 	float: left;
@@ -21,10 +30,22 @@ button {
 	color: white;
 	background-color: gray;
 	border-radius: .5em;
-	padding: .2em;
+	padding: .5em;
+	width: 15em;
+	font-size: 1.2em;
+	margin-left: 2.2em;
 }
 button#addButton {
 	background-color: green;
+	margin-bottom: 2em;
+	margin-top: 3em;
+}
+button#editButton {
+	margin: 2em 0 1em 2.2em;
+}
+button#addButton {
+	background-color: green;
+	margin-bottom: 1em;
 }
 button:hover, button:focus, button:active {
 	background-color: blue;
@@ -36,16 +57,39 @@ small {
 ul {
 	background-color: #ccc;
 	border-radius: 1em;
+	padding: .8em .2em;
+	width: 20em;
+	margin: 0 auto;
 }
 ul li {
 	background-color: white;
 	border: .1em solid #ccc;
 	color: black;
-	font-size: 1.2em;
+	font-size: 1.5em;
+	list-style-type: none;
+	text-align: center;
 }
-.removeItem {
+ul li:hover {
+	background-color: #eee;
+	color: white;
+}
+span.removeItem {
 	color: red;
 	font-size: .9em;
 	font-weight: bold;
-	margin-right: 1em;
+	margin-right: 4em;
+	margin-left: -5em;
+	text-align: left;
+}
+span.removeItem:hover {
+	color: black;
+}
+input {
+	margin-left: 3.5em;
+	width: 60%;
+	font-size: 1.2em;
+}
+label {
+	text-align: center;
+	margin-left: 7.5em;
 }
