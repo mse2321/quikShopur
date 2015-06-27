@@ -1,0 +1,51 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	width: 100%;
+}
+h1 {
+	font-size: 1em;
+	text-align: left;
+}
+aside {
+	float: right;
+}
+section {
+	background: url() no-repeat cover;
+}
+img {
+	float: left;
+	margin-left: 4em;
+}
+button {
+	color: white;
+	background-color: gray;
+	border-radius: .5em;
+	padding: .2em;
+}
+button#addButton {
+	background-color: green;
+}
+button:hover, button:focus, button:active {
+	background-color: blue;
+}
+small {
+	font-size: .7em;
+	color: white;
+}
+ul {
+	background-color: #ccc;
+	border-radius: 1em;
+}
+ul li {
+	background-color: white;
+	border: .1em solid #ccc;
+	color: black;
+	font-size: 1.2em;
+}
+.removeItem {
+	color: red;
+	font-size: .9em;
+	font-weight: bold;
+	margin-right: 1em;
+}
