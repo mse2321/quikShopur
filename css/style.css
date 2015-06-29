@@ -2,6 +2,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 1em;
 	margin: 0;
+	background: url(img/shopping-list-bg.jpg);
 }
 h1 {
 	font-size: 1em;
@@ -18,9 +19,6 @@ aside {
 	width: 20%;
 	margin-top: 0;
 	height: 54.6em;
-}
-section {
-	background: url(img/) no-repeat cover;
 }
 img {
 	float: left;
