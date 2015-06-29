@@ -33,6 +33,7 @@ aside {
 	margin-top: 0;
 	height: 56.1em;
 	display: block;
+	cursor: pointer;
 }
 .fa-cart-plus {
 	font-size: 4em;
@@ -41,6 +42,10 @@ aside {
 #logo-text {
 	font-size: 3.5em;
 	margin-left: .3em;
+}
+span#logo-text > span#accent-logo-text {
+	color: green;
+	font-weight: bold;
 }
 button {
 	color: white;
@@ -59,12 +64,13 @@ button#addButton {
 button#editButton {
 	margin: 2em 0 1em 2.2em;
 }
-button#addButton {
-	background-color: green;
-	margin-bottom: 1em;
+button#addButton:hover {
+	background-color: black;
+	color: white;
 }
 button:hover, button:focus, button:active {
-	background-color: blue;
+	background-color: black;
+	cursor: pointer;
 }
 small {
 	font-size: .7em;
@@ -87,7 +93,7 @@ ul li {
 	text-align: center;
 }
 ul li:hover {
-	background-color: #eee;
+	background-color: black;
 	color: white;
 }
 span.removeItem {
@@ -99,7 +105,8 @@ span.removeItem {
 	text-align: left;
 }
 span.removeItem:hover {
-	color: black;
+	color: green;
+	cursor: pointer;
 }
 input {
 	margin-left: 3.5em;
@@ -110,4 +117,40 @@ label {
 	text-align: center;
 	margin-left: 7.5em;
 	color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+	.container, header, footer, aside{
+		width: 100%;
+		text-align: center;
+	}
+	aside {
+		height: 42em;
+	}
+	#logo-text {
+		font-size: 35px;
+	}
+	h1 {
+		width: 90%;
+	}
+	input, label, button#saveButton {
+		margin: 0 auto;
+	}
+	button#editButton {
+		margin: 1.7em auto .8em auto;
+	}
+	button#addButton {
+		margin: .8em auto 1.7em auto;
+	}
+	aside ul {
+		width: 80%;
+		margin: 0 11%;
+	}
+	body {
+		background: none;
+	}
+	footer, small {
+	margin: 1em 1% 1em -2%;
+	}
 }
