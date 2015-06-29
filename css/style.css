@@ -2,7 +2,8 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 1em;
 	margin: 0;
-	background: url(img/shopping-list-bg.jpg);
+	background: url("../img/shopping-list-bg.jpg") no-repeat;
+	background-size: cover;
 }
 h1 {
 	font-size: 1em;
