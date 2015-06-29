@@ -7,23 +7,40 @@ body {
 }
 h1 {
 	font-size: 1em;
+}
+header,section,footer {
+	width: 77%;
+	clear: right;
+}
+header {
+	margin-left: 1em;
+	margin-top: 2em;
 	text-align: left;
 }
-header,div,section,footer {
-	width: 60%;
-	clear: right;
+.container{
+	width: 77%;
+	float: left;
+	display: block;
+}
+footer {
+	margin-top: 46.5em;
 }
 aside {
 	float: right;
-	background-color: rgba(0, 0, 0, 0.1);
-	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 1.5em 1em 0 1em;
 	width: 20%;
 	margin-top: 0;
-	height: 54.6em;
+	height: 56.1em;
+	display: block;
 }
-img {
-	float: left;
-	margin-left: 4em;
+.fa-cart-plus {
+	font-size: 4em;
+
+}
+#logo-text {
+	font-size: 3.5em;
+	margin-left: .3em;
 }
 button {
 	color: white;
@@ -51,7 +68,8 @@ button:hover, button:focus, button:active {
 }
 small {
 	font-size: .7em;
-	color: white;
+	color: black;
+	padding-left: 1em;
 }
 ul {
 	background-color: #ccc;
@@ -91,4 +109,5 @@ input {
 label {
 	text-align: center;
 	margin-left: 7.5em;
+	color: white;
 }
