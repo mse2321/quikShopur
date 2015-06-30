@@ -1,0 +1,156 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	background: url("../img/shopping-list-bg.jpg") no-repeat;
+	background-size: cover;
+}
+h1 {
+	font-size: 1em;
+}
+header,section,footer {
+	width: 77%;
+	clear: right;
+}
+header {
+	margin-left: 1em;
+	margin-top: 2em;
+	text-align: left;
+}
+.container{
+	width: 77%;
+	float: left;
+	display: block;
+}
+footer {
+	margin-top: 46.5em;
+}
+aside {
+	float: right;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 1.5em 1em 0 1em;
+	width: 20%;
+	margin-top: 0;
+	height: 56.1em;
+	display: block;
+	cursor: pointer;
+}
+.fa-cart-plus {
+	font-size: 4em;
+
+}
+#logo-text {
+	font-size: 3.5em;
+	margin-left: .3em;
+}
+span#logo-text > span#accent-logo-text {
+	color: green;
+	font-weight: bold;
+}
+button {
+	color: white;
+	background-color: gray;
+	border-radius: .5em;
+	padding: .5em;
+	width: 15em;
+	font-size: 1.2em;
+	margin-left: 2.2em;
+}
+button#addButton {
+	background-color: green;
+	margin-bottom: 2em;
+	margin-top: 3em;
+}
+button#editButton {
+	margin: 2em 0 1em 2.2em;
+}
+button#addButton:hover {
+	background-color: black;
+	color: white;
+}
+button:hover, button:focus, button:active {
+	background-color: black;
+	cursor: pointer;
+}
+small {
+	font-size: .7em;
+	color: black;
+	padding-left: 1em;
+}
+ul {
+	background-color: #ccc;
+	border-radius: 1em;
+	padding: .8em .2em;
+	width: 20em;
+	margin: 0 auto;
+}
+ul li {
+	background-color: white;
+	border: .1em solid #ccc;
+	color: black;
+	font-size: 1.5em;
+	list-style-type: none;
+	text-align: center;
+}
+ul li:hover {
+	background-color: black;
+	color: white;
+}
+span.removeItem {
+	color: red;
+	font-size: .9em;
+	font-weight: bold;
+	margin-right: 4em;
+	margin-left: -5em;
+	text-align: left;
+}
+span.removeItem:hover {
+	color: green;
+	cursor: pointer;
+}
+input {
+	margin-left: 3.5em;
+	width: 60%;
+	font-size: 1.2em;
+}
+label {
+	text-align: center;
+	margin-left: 7.5em;
+	color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+	.container, header, footer, aside{
+		width: 100%;
+		text-align: center;
+	}
+	aside {
+		height: 42em;
+	}
+	#logo-text {
+		font-size: 35px;
+	}
+	h1 {
+		width: 90%;
+	}
+	input, label, button#saveButton {
+		margin: 0 auto;
+	}
+	button#editButton {
+		margin: 1.7em auto .8em auto;
+	}
+	button#addButton {
+		margin: .8em auto 1.7em auto;
+	}
+	aside ul {
+		width: 80%;
+		margin: 0 11%;
+	}
+	body {
+		background: none;
+	}
+	footer, small {
+	margin: 1em 1% 1em -2%;
+	}
+}
