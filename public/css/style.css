@@ -35,6 +35,9 @@ aside {
 	display: block;
 	cursor: pointer;
 }
+#list-items {
+	height: 35em;
+}
 .fa-cart-plus {
 	font-size: 4em;
 
