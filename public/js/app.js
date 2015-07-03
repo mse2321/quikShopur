@@ -1,10 +1,4 @@
 $(document).ready( function() {
-
-	/*$("span[class='removeItem']").hide(); */
-
-	/*$("#list-items").click(function(this){
-		$("span[class='removeItem']").show(this);
-	});*/
 	
 	//Takes in input
 	$("#item").focusout(function(itemVal)	{
@@ -13,8 +7,10 @@ $(document).ready( function() {
 		console.log(itemVal);
 	});
 
+	/*
 	//Removes Item
 	$(".removeItem").click(removeEntry);
+	*/
 
 	//Add Info Handler
 	$('button[id="addButton"]').on('click', itemStorage);
@@ -30,9 +26,7 @@ $(document).ready( function() {
 			
 	};
 	/*function removeEntry(itemName, ItemList){		
-		$(itemList.length).each(function() {
-			$("#list-items").html("<li><span class='removeItem'>X</span>" + itemList + "</li>");
-			console.log(itemList);
+		$(itemList).remove(this.ItemName)
 		});
 			
 	};*/
