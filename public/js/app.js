@@ -5,27 +5,29 @@ $(document).ready( function() {
 		itemVal = $('#item').val();
 	$('#item').data('itemVal', itemVal);
 		console.log(itemVal);
+
+	itemList = $.makeArray(itemVal);
 	});
 
-	/*
+	
 	//Removes Item
-	$(".removeItem").click(removeEntry);
+	/*$(".removeItem").click(removeEntry);
 	*/
 
 	//Add Info Handler
 	$('button[id="addButton"]').on('click', itemStorage);
 
-	function itemStorage(itemVal){		
-		itemName = $("#item").data('itemVal');
-		itemList = $.makeArray(itemName);
+	function itemStorage(itemVal){
 
-		$(itemList.length).each(function() {
-			$("#list-items").html("<li><span class='removeItem'>X</span>" + itemList + "</li>");
+		$.map(itemList, function(itemVal) {
 			console.log(itemList);
+			$("#list-items").html("<li><span class='removeItem'>X</span>" + itemList + "</li>");
 		});
 			
 	};
-	/*function removeEntry(itemName, ItemList){		
+	
+	/*
+	function removeEntry(itemVal, ItemList){		
 		$(itemList).remove(this.ItemName)
 		});
 			
