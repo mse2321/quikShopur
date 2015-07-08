@@ -1,36 +1,47 @@
 $(document).ready( function() {
-	
-	//Takes in input
-	$("#item").focusout(function(itemVal)	{
-		itemVal = $('#item').val();
-	$('#item').data('itemVal', itemVal);
-		console.log(itemVal);
 
-	itemList = $.makeArray(itemVal);
-	});
+  var items = $.makeArray();
 
-	
-	//Removes Item
-	/*$(".removeItem").click(removeEntry);
-	*/
+// Add item handler
+  $('#list-form').on('keydown', function(event){
+  	if(event.keyCode === 13){
+  		addItem($('#item').val());
 
-	//Add Info Handler
-	$('button[id="addButton"]').on('click', itemStorage);
+  		return false;
+  	}
+  });
 
-	function itemStorage(itemVal){
+// On Add Button Click
+  $('#addButton').click(function(){
+  	addItem($('#item').val());
 
-		$.map(itemList, function(itemVal) {
-			console.log(itemList);
-			$("#list-items").html("<li><span class='removeItem'>X</span>" + itemList + "</li>");
-		});
-			
-	};
-	
-	/*
-	function removeEntry(itemVal, ItemList){		
-		$(itemList).remove(this.ItemName)
-		});
-			
-	};*/
+  	return false;
+  });
 
+
+// splitting text from element
+  $('#list-items').on('click', 'li span', function(event){
+  	var removeItem = $(this).parent().text().split(' ')[0];
+  	items = items.filter(function(item){ return item !== removeItem });
+  	drawList();
+  });
+
+// The additem fucntion
+  function addItem(item){
+	  items.push(item);
+	  $('#item').val('');
+	  drawList();
+  }
+
+// Inserts HTML for items
+  function drawList(){
+	  var content = '';
+	  $('#list-items').html('');
+
+	  items.forEach(function(item){
+	  content += "<li contenteditable='true'>" + item + " <span class='removeItem'>X</span></li>";
+	  });
+
+	  $('#list-items').html(content);
+  }
 });
