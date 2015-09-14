@@ -122,38 +122,38 @@ label {
 	color: white;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1800px) {
 
-	.container, header, footer, aside{
-		width: 100%;
+	.container, body, header, footer, aside{
+		width: 90%;
 		text-align: center;
+		margin: 1em auto;
 	}
 	aside {
-		height: 42em;
+		height: 100%;
+		float: none;
+		padding-bottom: 2em;
+	}
+	.container {
+		float: none;
 	}
 	#logo-text {
 		font-size: 35px;
 	}
-	h1 {
-		width: 90%;
-	}
-	input, label, button#saveButton {
+	input, label, button {
 		margin: 0 auto;
 	}
-	button#editButton {
-		margin: 1.7em auto .8em auto;
-	}
-	button#addButton {
-		margin: .8em auto 1.7em auto;
+	button {
+		width: 40%;
 	}
 	aside ul {
 		width: 80%;
-		margin: 0 11%;
+		margin: 1em auto;
 	}
 	body {
 		background: none;
 	}
-	footer, small {
-	margin: 1em 1% 1em -2%;
+	#logo {
+		margin: 1em auto;
 	}
 }
